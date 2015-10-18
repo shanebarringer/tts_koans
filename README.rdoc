@@ -1,4 +1,4 @@
-This entire project is a fork (geared towards entry level developers) of the most-excellent Neo Ruby Koans project. All credit for such brilliance goes to them. http://rubykoans.com/
+This entire project is a fork (geared towards entry level developers) of the most-excellent Neo Ruby Koans project. All credit for such brilliance goes to them. http://rubykoans.com
 
 
 = Neo Ruby Koans
