@@ -261,6 +261,7 @@ module Neo
         guide_through_error
         a_zenlike_statement
         show_progress
+        # homework
       else
         end_screen
       end
@@ -282,6 +283,14 @@ module Neo
       print " #{pass_count}/#{total_tests}"
       puts
     end
+
+    # TODO create homework/helpful url launcher for each specific lesson
+    # def homework
+    #   case pass_count
+    #     when 1
+    #       # system("start https://rubymonk.com/learning/books/1-ruby-primer/chapters/6-objects/lessons/35-introduction-to-objects") || system("open" , "https://rubymonk.com/learning/books/1-ruby-primer/chapters/6-objects/lessons/35-introduction-to-objects")
+    #   end
+    # end
 
     def end_screen
       if Neo.simple_output

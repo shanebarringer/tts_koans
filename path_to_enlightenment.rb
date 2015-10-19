@@ -2,18 +2,18 @@
 
 $LOAD_PATH << File.dirname(__FILE__)
 
-# class 1
+# lesson 1
 require 'about_asserts'
 require 'about_strings'
 
-# class 2
+# lesson 2
 require 'about_true_and_false'
 require 'about_nil'
 
-# class 3
+# lesson 3
 require 'about_methods'
 
-# class 4
+# lesson 4
 require 'about_objects'
 require 'about_arrays'
 require 'about_array_assignment'
@@ -22,7 +22,7 @@ require 'about_iteration'
 require 'about_classes'
 require 'about_inheritance'
 
-# class 5
+# lesson 5
 require 'about_modules'
 require 'about_symbols'
 require 'about_blocks'
