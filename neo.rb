@@ -257,7 +257,7 @@ module Neo
         guide_through_error
         a_zenlike_statement
         show_progress
-        homework
+        launch_browser
       else
         end_screen
       end
@@ -280,24 +280,23 @@ module Neo
       puts
     end
 
-    def read_hw?(file, num = 0)
+    def verify_file(file, num = 0)
       IO.readlines(file)[num].nil?
     end
 
-    def lesson?(number)
+    def assertion_number(number)
       pass_count == number
     end
 
-    def homework
+    def launch_browser
       File.open('homework.txt', 'a') do |file|
-        if lesson?(5) && read_hw?(file, 0)
+        if assertion_number(5) && verify_file(file, 0)
           system('start https://rubymonk.com/learning/books/1-ruby-primer/chapters/6-objects/lessons/35-introduction-to-objects') || system('open', 'https://rubymonk.com/learning/books/1-ruby-primer/chapters/6-objects/lessons/35-introduction-to-objects')
           file.puts 'lesson 1 complete'
 
-        elsif lesson?(33) && read_hw?(file, 1)
+        elsif assertion_number(33) && verify_file(file, 1)
           system('start https://rubymonk.com/learning/books/1-ruby-primer/chapters/8-control-structures/lessons/43-boolean-expressions-in-ruby') || system('open', 'https://rubymonk.com/learning/books/1-ruby-primer/chapters/8-control-structures/lessons/43-boolean-expressions-in-ruby')
-          file.puts ('lesson 2 complete')
-
+          file.puts 'lesson 2 complete'
         end
       end
     end
