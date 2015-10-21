@@ -9,14 +9,14 @@ require 'about_strings'
 # lesson 2
 require 'about_true_and_false'
 require 'about_nil'
+require 'about_arrays'
+require 'about_array_assignment'
 
 # lesson 3
 require 'about_methods'
 
 # lesson 4
 require 'about_objects'
-require 'about_arrays'
-require 'about_array_assignment'
 require 'about_hashes'
 require 'about_iteration'
 require 'about_classes'
